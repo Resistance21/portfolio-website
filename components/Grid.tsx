@@ -87,7 +87,7 @@ const items = [
         >
           <Image
             className="mr-3"
-            src="/images/github-mark-white.svg"
+            src="/github-mark-white.svg"
             alt="git hub logo"
             height={30}
             width={30}
@@ -140,7 +140,7 @@ const items = [
         >
           <Image
             className="mr-3"
-            src="/images/github-mark-white.svg"
+            src="/github-mark-white.svg"
             alt="git hub logo"
             height={30}
             width={30}

@@ -40,7 +40,7 @@ function Navbar({ className }: { className?: string }) {
           >
             <Image
               className="mr-3"
-              src="/images/github-mark-white.svg"
+              src="/github-mark-white.svg"
               alt="git hub logo"
               height={30}
               width={30}
