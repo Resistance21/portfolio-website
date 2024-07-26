@@ -78,7 +78,7 @@ const items = [
         </a>
         <a
           className="flex justify-center items-center"
-          href="https://github.com/Resistance21/banking-app"
+          href="https://github.com/Resistance21/outdoor-vacation-site"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -131,7 +131,7 @@ const items = [
         </a>
         <a
           className="flex justify-center items-center"
-          href="https://github.com/Resistance21/crown-clothing-TS"
+          href="https://github.com/Resistance21/omnifood-website"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -184,7 +184,7 @@ const items = [
         </a>
         <a
           className="flex justify-center items-center"
-          href="https://github.com/Resistance21/crown-clothing-TS"
+          href="https://github.com/Resistance21/real-estate-website"
           target="_blank"
           rel="noopener noreferrer"
         >

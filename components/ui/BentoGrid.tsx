@@ -46,15 +46,15 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="flex flex-col">
-        {header}
-        <div className="flex-col">
+      <div className="flex flex-col h-full">
+        <div>{header}</div>
+        <div className="flex flex-col h-full">
           <div className="my-5 font-bold">{title}</div>
           <div className="mb-5">{techStack}</div>
           <div className="font-sans font-normal text-neutral-600 dark:text-neutral-300 mb-3">
-            {description}
+            <p className="whitespace-pre-line">{description}</p>
           </div>
-          <div>{liveLinks}</div>
+          <div className="mt-auto">{liveLinks}</div>
         </div>
       </div>
     </div>

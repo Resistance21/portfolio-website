@@ -48,8 +48,11 @@ const items = [
         </div>
       </div>
     ),
-    description:
-      "Final year university project in which my team and I had to design a scheduling system for the university which would take over for the current scheduling system for teachers and classes. The old system was managed through excel sheets, the new system was an online portal that Admins, Managers and Teachers could log into to see their schedules as well as admins and manager have the abilities to add new users as well as assigning schedules and making class modifications as needed.",
+    description: `Final year university project in which my team and I had to design a scheduling system for the university which would take over for the current scheduling system for teachers and classes. The old system was managed through excel sheets, the new system was an online portal that Admins, Managers and Teachers could log into to see their schedules as well as admins and manager have the abilities to add new users as well as assigning schedules and making class modifications as needed.
+      Accounts:
+      Manager: user - shane_tim@gmail.com pass - qwer123
+      Lecturer: user - brendan_hales@test.com pass - qwer123
+      (admin account has to much privileges)`,
     header: (
       <Skeleton
         imagePath="/images/uni-project-preview.jpg"
