@@ -109,11 +109,11 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, className, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 dark:hover:text-blue-400 "
+      className={`text-neutral-700 dark:text-neutral-200 dark:hover:text-blue-400 ${className}`}
     >
       {children}
     </Link>

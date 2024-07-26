@@ -8,7 +8,7 @@ const Hero = () => {
   const nameText = "Brendan Hales";
   return (
     <div>
-      <div className="h-[80vh] w-full  flex items-center justify-center ">
+      <div className="h-[90vh] w-full  flex items-center justify-center ">
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-lg text-center max-w-80% mb-10">
@@ -23,7 +23,9 @@ const Hero = () => {
                 duration={2}
               />
             </h2>
-            <ShimmerButton buttonText="View My Propjects" />
+            <a href="#Projects">
+              <ShimmerButton buttonText="View My Propjects" />
+            </a>
           </div>
         </div>
       </div>

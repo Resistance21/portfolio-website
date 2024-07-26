@@ -14,18 +14,20 @@ const Skeleton = ({
   imageWidth,
   customStyle,
   siteUrl,
+  altImageText,
 }: {
   imagePath: string;
   imageWidth: number;
   imageHeight: number;
   customStyle?: CSSProperties;
   siteUrl: string;
+  altImageText: string;
 }) => (
   <div className="flex overflow-hidden w-full">
     <a href={siteUrl} target="_blank" rel="noopener noreferrer">
       <Image
         src={imagePath}
-        alt="banking app"
+        alt={altImageText}
         width={imageWidth}
         height={imageHeight}
         style={customStyle}
@@ -37,25 +39,22 @@ const Skeleton = ({
 
 const items = [
   {
-    title: "Bankiong Application",
+    title: "Outdoor Vacation landing page",
     techStack: (
       <div>
         <h2>Teach stack</h2>
         <div className="flex gap-2">
-          {techLogos.appWrite}
-          {techLogos.react}
-          {techLogos.tailwind}
-          {techLogos.dwolla}
-          {techLogos.next}
-          {techLogos.vercel}
+          {techLogos.html5}
+          {techLogos.javaScript}
+          {techLogos.css3}
+          {techLogos.netlify}
         </div>
       </div>
     ),
-    description:
-      "Banking application that allows users to add their banks to a central platform to view their balances, transactions as well as performing transactions between there accounts or other with the use of searable transfer id for each bank account",
+    description: "Small Landing page for a outdoors vacation location",
     header: (
       <Skeleton
-        imagePath="/images/banking-app-preview.jpg"
+        imagePath="/images/outdoor-vacation-preview.jpg"
         imageHeight={1309}
         imageWidth={1309}
         customStyle={{
@@ -63,14 +62,15 @@ const items = [
           width: "100%",
           height: "100%",
         }}
-        siteUrl="https://banking-app-ten-sigma.vercel.app/"
+        siteUrl="https://natours-rec.netlify.app/"
+        altImageText="Outdoor Vacation landing page"
       />
     ),
     liveLinks: (
       <div className="flex justify-between">
         <a
           className="text-blue-500"
-          href="https://banking-app-ten-sigma.vercel.app/"
+          href="https://natours-rec.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -95,35 +95,35 @@ const items = [
     ),
   },
   {
-    title: "Digital Clothing Store",
+    title: "Healthy Food delivery service landing page",
     techStack: (
       <div>
         <h2>Teach stack</h2>
         <div className="flex gap-2">
-          {techLogos.react}
-          {techLogos.firebase}
-          {techLogos.scss}
-          {techLogos.stripe}
+          {techLogos.html5}
+          {techLogos.css3}
+          {techLogos.javaScript}
           {techLogos.netlify}
         </div>
       </div>
     ),
     description:
-      "A Digital clothing store where users can sign in to the website with either a gmail or personal email/password account, they can add items to a cart and then move to the checkout when ready to finalise their purchase through the use of stripe",
+      "Landing page a  healthy food delivery service that users can sign up for.",
     header: (
       <Skeleton
-        imagePath="/images/crown-clothing-preview.jpg"
+        imagePath="/images/omni-food-preview.jpg"
         imageHeight={1309}
         imageWidth={1309}
         customStyle={{ objectFit: "cover", width: "100%", height: "100%" }}
-        siteUrl="https://crown-clothing-tscript.netlify.app/"
+        siteUrl="https://quiet-gumption-ddba59.netlify.app/"
+        altImageText="OmniFood landing page"
       />
     ),
     liveLinks: (
       <div className="flex justify-between">
         <a
           className="text-blue-500"
-          href="https://crown-clothing-tscript.netlify.app/"
+          href="https://quiet-gumption-ddba59.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -147,9 +147,62 @@ const items = [
       </div>
     ),
   },
+  {
+    title: "Real Estate website landing page",
+    techStack: (
+      <div>
+        <h2>Teach stack</h2>
+        <div className="flex gap-2">
+          {techLogos.html5}
+          {techLogos.css3}
+          {techLogos.javaScript}
+          {techLogos.netlify}
+        </div>
+      </div>
+    ),
+    description:
+      "A landing page for a real estate website where users can view properties that are available for purchase.",
+    header: (
+      <Skeleton
+        imagePath="/images/house-selling-preview.jpg"
+        imageHeight={1309}
+        imageWidth={1309}
+        customStyle={{ objectFit: "cover", width: "100%", height: "100%" }}
+        siteUrl="https://nexter-bh.netlify.app/"
+        altImageText="Nexter landing page"
+      />
+    ),
+    liveLinks: (
+      <div className="flex justify-between">
+        <a
+          className="text-blue-500"
+          href="https://nexter-bh.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live Site Link
+        </a>
+        <a
+          className="flex justify-center items-center"
+          href="https://github.com/Resistance21/crown-clothing-TS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            className="mr-3"
+            src="/images/github-mark-white.svg"
+            alt="git hub logo"
+            height={30}
+            width={30}
+          />
+          Github Reop
+        </a>
+      </div>
+    ),
+  },
 ];
 
-const Grid = () => {
+const SmallProjectGrid = () => {
   return (
     <section>
       <BentoGrid className="max-w-[70%] mx-auto">
@@ -168,4 +221,4 @@ const Grid = () => {
   );
 };
 
-export default Grid;
+export default SmallProjectGrid;
