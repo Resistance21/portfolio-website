@@ -53,9 +53,7 @@ const items = [
     ),
     description: `Banking application that allows users to add their banks to a central platform to view their balances, transactions as well as performing transactions between there accounts or other with the use of searable transfer id for each bank account.
     
-    if you want to use an account use the following information:
-    username: account1@email.com
-    password: qazxswed`,
+    Login as a Guest to see its features`,
     header: (
       <Skeleton
         imagePath="/images/banking-app-preview.jpg"
